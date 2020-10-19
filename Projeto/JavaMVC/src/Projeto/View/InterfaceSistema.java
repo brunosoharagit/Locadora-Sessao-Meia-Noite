@@ -68,9 +68,6 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
@@ -335,24 +332,6 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(51, 51, 51));
         jPanel7.setPreferredSize(new java.awt.Dimension(870, 440));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel17.setFont(new java.awt.Font("Open Sans Semibold", 0, 36)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel17.setText("<html>\n<body>\nBem-vindo à <br> Locadora Sessão Meia Noite!!\n</body>\n</html>");
-        jPanel7.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 318, -1));
-
-        jLabel26.setFont(new java.awt.Font("Nirmala UI", 1, 36)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 153, 0));
-        jLabel26.setText("Especial de Halloween!!");
-        jPanel7.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, -1, -1));
-
-        jLabel27.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/imagens/137270.jpg-c_215_290_x-f_jpg-q_x-xxyxx.jpg"))); // NOI18N
-        jLabel27.setText("Disponível para alugar!!");
-        jPanel7.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 110, -1, -1));
-
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 870, 540));
 
         jInternalFrame2.getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
@@ -637,7 +616,6 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
@@ -647,8 +625,6 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
