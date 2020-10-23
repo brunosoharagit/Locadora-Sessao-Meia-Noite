@@ -62,28 +62,44 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jPanel16 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jDesktopPane1 = new javax.swing.JDesktopPane();
-        jInternalFrame2 = new javax.swing.JInternalFrame();
+        jifHome = new javax.swing.JInternalFrame();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
+        jifFilmes = new javax.swing.JInternalFrame();
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jInternalFrame3 = new javax.swing.JInternalFrame();
+        jifClientes = new javax.swing.JInternalFrame();
         jPanel14 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        jInternalFrame4 = new javax.swing.JInternalFrame();
+        jifAtores = new javax.swing.JInternalFrame();
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jInternalFrame5 = new javax.swing.JInternalFrame();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        txtAtor = new javax.swing.JTextField();
+        jcbNacionalidade = new javax.swing.JComboBox<>();
+        btnSalvar = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        btnLimpar = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        btnCancelar = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        btnConsultar = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jifLocacoes = new javax.swing.JInternalFrame();
         jPanel19 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
@@ -102,6 +118,7 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Locadora Sessão Meia Noite");
+        setResizable(false);
 
         pnlBackground.setBackground(new java.awt.Color(25, 25, 25));
         pnlBackground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -130,12 +147,12 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(153, 0, 0));
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 5, 40));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/cart-12-24.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/moderator-24.png"))); // NOI18N
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 40));
 
         jLabel3.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Itens");
+        jLabel3.setText("Atores");
         jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 70, 40));
 
         pnlBarraLateral.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 160, 40));
@@ -309,9 +326,9 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jDesktopPane1.setBackground(new java.awt.Color(15, 15, 15));
         jDesktopPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jInternalFrame2.setTitle("Página Principal");
-        jInternalFrame2.setVisible(true);
-        jInternalFrame2.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jifHome.setTitle("Página Principal");
+        jifHome.setVisible(true);
+        jifHome.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -334,13 +351,13 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 870, 540));
 
-        jInternalFrame2.getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
+        jifHome.getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
 
-        jDesktopPane1.add(jInternalFrame2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
+        jDesktopPane1.add(jifHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
 
-        jInternalFrame1.setTitle("Catálogo de Filmes");
-        jInternalFrame1.setVisible(false);
-        jInternalFrame1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jifFilmes.setTitle("Catálogo de Filmes");
+        jifFilmes.setVisible(false);
+        jifFilmes.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel11.setBackground(new java.awt.Color(51, 51, 51));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -359,15 +376,15 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
         jPanel11.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 100));
 
-        jInternalFrame1.getContentPane().add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
+        jifFilmes.getContentPane().add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
 
-        jDesktopPane1.add(jInternalFrame1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
+        jDesktopPane1.add(jifFilmes, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
 
-        jInternalFrame3.setTitle("Clientes");
-        jInternalFrame3.setMinimumSize(new java.awt.Dimension(880, 570));
-        jInternalFrame3.setPreferredSize(new java.awt.Dimension(886, 574));
-        jInternalFrame3.setVisible(false);
-        jInternalFrame3.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jifClientes.setTitle("Clientes");
+        jifClientes.setMinimumSize(new java.awt.Dimension(880, 570));
+        jifClientes.setPreferredSize(new java.awt.Dimension(886, 574));
+        jifClientes.setVisible(false);
+        jifClientes.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel14.setBackground(new java.awt.Color(51, 51, 51));
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -385,13 +402,13 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
         jPanel14.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 100));
 
-        jInternalFrame3.getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 570));
+        jifClientes.getContentPane().add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 570));
 
-        jDesktopPane1.add(jInternalFrame3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
+        jDesktopPane1.add(jifClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
 
-        jInternalFrame4.setTitle("Itens");
-        jInternalFrame4.setVisible(false);
-        jInternalFrame4.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jifAtores.setTitle("Itens");
+        jifAtores.setVisible(false);
+        jifAtores.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel17.setBackground(new java.awt.Color(51, 51, 51));
         jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -401,21 +418,95 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
         jLabel30.setFont(new java.awt.Font("Nirmala UI", 1, 48)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel30.setText("Itens");
+        jLabel30.setText("Atores");
         jPanel18.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/cart-12-80.png"))); // NOI18N
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/moderator-80.png"))); // NOI18N
         jPanel18.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
 
         jPanel17.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 100));
 
-        jInternalFrame4.getContentPane().add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
+        jLabel17.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("Nome do ator: ");
+        jPanel17.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 150, 30));
 
-        jDesktopPane1.add(jInternalFrame4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
+        jLabel26.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("Nacionalidade: ");
+        jPanel17.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 150, 30));
+        jPanel17.add(txtAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 170, 490, 30));
 
-        jInternalFrame5.setTitle("Locações");
-        jInternalFrame5.setVisible(false);
-        jInternalFrame5.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jcbNacionalidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione a nacionalidade deste ator.", "Brasileiro", "Canadense", "Mexicano(a)", "Argentino(a)", "Italiano(a)", "Norte Americano(a)", "Inglês(esa)", "Francês(esa)", "Japonês(esa)", "Espanhol(a)", "Holandês(esa)", "Alemão", "Sueco(a)", "Chileno(a)", "Boliviano(a)", "Chinês", "Australiano(a)", "Jamaicano(a)", "Suiço(a)", "Iraquiano(a)", "Húngaro(a)", "Ruso(a)", "Belga", "Equatoriano(a)", "Turco(a)", "Paraguaio(a)", "Uraguaio(a)", "Cubano(a)", "Colombiano(a)" }));
+        jPanel17.add(jcbNacionalidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 240, 240, 30));
+
+        btnSalvar.setBackground(new java.awt.Color(35, 35, 35));
+        btnSalvar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel27.setText("Salvar");
+        btnSalvar.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/save-24.png"))); // NOI18N
+        btnSalvar.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 40));
+
+        jPanel17.add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, 160, 40));
+
+        btnLimpar.setBackground(new java.awt.Color(35, 35, 35));
+        btnLimpar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel35.setText("Limpar");
+        btnLimpar.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(52, 0, 110, 40));
+
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/polish-cloth-24.png"))); // NOI18N
+        btnLimpar.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 40));
+
+        jPanel17.add(btnLimpar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 330, 160, 40));
+
+        btnCancelar.setBackground(new java.awt.Color(35, 35, 35));
+        btnCancelar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel37.setText("Cancelar");
+        btnCancelar.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+
+        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/search-3-24.png"))); // NOI18N
+        btnCancelar.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 40));
+
+        jPanel17.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 160, 40));
+
+        btnConsultar.setBackground(new java.awt.Color(35, 35, 35));
+        btnConsultar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel39.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel39.setText("Consultar");
+        btnConsultar.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/search-3-24.png"))); // NOI18N
+        btnConsultar.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 40));
+
+        jPanel17.add(btnConsultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 160, 40));
+
+        jifAtores.getContentPane().add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
+
+        jDesktopPane1.add(jifAtores, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
+
+        jifLocacoes.setTitle("Locações");
+        jifLocacoes.setVisible(false);
+        jifLocacoes.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel19.setBackground(new java.awt.Color(51, 51, 51));
         jPanel19.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -433,9 +524,9 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
         jPanel19.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 100));
 
-        jInternalFrame5.getContentPane().add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
+        jifLocacoes.getContentPane().add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
 
-        jDesktopPane1.add(jInternalFrame5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
+        jDesktopPane1.add(jifLocacoes, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 880, 570));
 
         pnlBackground.add(jDesktopPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 860, 530));
 
@@ -455,11 +546,11 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
         bar(jLabel4);
-        jInternalFrame2.setVisible(true);
-        jInternalFrame1.setVisible(false);
-        jInternalFrame3.setVisible(false);
-        jInternalFrame4.setVisible(false);
-        jInternalFrame5.setVisible(false);
+        jifHome.setVisible(true);
+        jifFilmes.setVisible(false);
+        jifClientes.setVisible(false);
+        jifAtores.setVisible(false);
+        jifLocacoes.setVisible(false);
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
@@ -472,11 +563,11 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
         bar(jLabel7);
-        jInternalFrame2.setVisible(false);
-        jInternalFrame1.setVisible(true);
-        jInternalFrame3.setVisible(false);
-        jInternalFrame4.setVisible(false);
-        jInternalFrame5.setVisible(false);
+        jifHome.setVisible(false);
+        jifFilmes.setVisible(true);
+        jifClientes.setVisible(false);
+        jifAtores.setVisible(false);
+        jifLocacoes.setVisible(false);
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
@@ -497,11 +588,11 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
         bar(jLabel10);
-        jInternalFrame2.setVisible(false);
-        jInternalFrame1.setVisible(false);
-        jInternalFrame3.setVisible(true);
-        jInternalFrame4.setVisible(false);
-        jInternalFrame5.setVisible(false);
+        jifHome.setVisible(false);
+        jifFilmes.setVisible(false);
+        jifClientes.setVisible(true);
+        jifAtores.setVisible(false);
+        jifLocacoes.setVisible(false);
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
@@ -518,11 +609,11 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
         bar(jLabel1);
-        jInternalFrame2.setVisible(false);
-        jInternalFrame1.setVisible(false);
-        jInternalFrame3.setVisible(false);
-        jInternalFrame4.setVisible(true);
-        jInternalFrame5.setVisible(false);
+        jifHome.setVisible(false);
+        jifFilmes.setVisible(false);
+        jifClientes.setVisible(false);
+        jifAtores.setVisible(true);
+        jifLocacoes.setVisible(false);
     }//GEN-LAST:event_jPanel3MouseClicked
 
     private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
@@ -539,11 +630,11 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
     private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
         bar(jLabel18);
-        jInternalFrame2.setVisible(false);
-        jInternalFrame1.setVisible(false);
-        jInternalFrame3.setVisible(false);
-        jInternalFrame4.setVisible(false);
-        jInternalFrame5.setVisible(true);
+        jifHome.setVisible(false);
+        jifFilmes.setVisible(false);
+        jifClientes.setVisible(false);
+        jifAtores.setVisible(false);
+        jifLocacoes.setVisible(true);
     }//GEN-LAST:event_jPanel9MouseClicked
 
     private void jPanel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseEntered
@@ -602,12 +693,11 @@ public class InterfaceSistema extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel btnCancelar;
+    private javax.swing.JPanel btnConsultar;
+    private javax.swing.JPanel btnLimpar;
+    private javax.swing.JPanel btnSalvar;
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JInternalFrame jInternalFrame2;
-    private javax.swing.JInternalFrame jInternalFrame3;
-    private javax.swing.JInternalFrame jInternalFrame4;
-    private javax.swing.JInternalFrame jInternalFrame5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -616,6 +706,7 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
@@ -625,6 +716,8 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
@@ -632,7 +725,14 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -658,7 +758,14 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JComboBox<String> jcbNacionalidade;
+    private javax.swing.JInternalFrame jifAtores;
+    private javax.swing.JInternalFrame jifClientes;
+    private javax.swing.JInternalFrame jifFilmes;
+    private javax.swing.JInternalFrame jifHome;
+    private javax.swing.JInternalFrame jifLocacoes;
     private javax.swing.JPanel pnlBackground;
     private javax.swing.JPanel pnlBarraLateral;
+    private javax.swing.JTextField txtAtor;
     // End of variables declaration//GEN-END:variables
 }
