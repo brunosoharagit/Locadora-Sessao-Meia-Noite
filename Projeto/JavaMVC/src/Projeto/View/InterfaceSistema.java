@@ -77,14 +77,14 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         btnLimpar2 = new javax.swing.JPanel();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
-        btnCancelar2 = new javax.swing.JPanel();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
-        btnConsultar2 = new javax.swing.JPanel();
         jLabel59 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
+        btnConsultar2 = new javax.swing.JPanel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        btnCancelar2 = new javax.swing.JPanel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
@@ -104,15 +104,15 @@ public class InterfaceSistema extends javax.swing.JFrame {
         btnSalvar1 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
-        btnLimpar1 = new javax.swing.JPanel();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
         btnCancelar1 = new javax.swing.JPanel();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
         btnConsultar1 = new javax.swing.JPanel();
-        jLabel48 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        btnLimpar1 = new javax.swing.JPanel();
         jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
         jLabel44 = new javax.swing.JLabel();
@@ -161,6 +161,12 @@ public class InterfaceSistema extends javax.swing.JFrame {
         btnConsultar3 = new javax.swing.JPanel();
         jLabel67 = new javax.swing.JLabel();
         jLabel68 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        txtTituloItem = new javax.swing.JTextField();
+        jLabel76 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel77 = new javax.swing.JLabel();
+        txtPreco = new javax.swing.JFormattedTextField();
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -342,7 +348,7 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
         jLabel20.setFont(new java.awt.Font("Nirmala UI", 0, 18)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("Locação");
+        jLabel20.setText("Itens");
         jPanel9.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, -1, 40));
 
         pnlBarraLateral.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 340, 160, 40));
@@ -434,6 +440,17 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jPanel11.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 100));
 
         btnSalvar2.setBackground(new java.awt.Color(35, 35, 35));
+        btnSalvar2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSalvar2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSalvar2MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnSalvar2MousePressed(evt);
+            }
+        });
         btnSalvar2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel53.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -449,49 +466,82 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jPanel11.add(btnSalvar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 160, 40));
 
         btnLimpar2.setBackground(new java.awt.Color(35, 35, 35));
+        btnLimpar2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnLimpar2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnLimpar2MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnLimpar2MousePressed(evt);
+            }
+        });
         btnLimpar2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel55.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel55.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel55.setText("Cancelar");
-        btnLimpar2.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
-
-        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/x-mark-24.png"))); // NOI18N
-        btnLimpar2.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
-
-        jPanel11.add(btnLimpar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, 160, 40));
-
-        btnCancelar2.setBackground(new java.awt.Color(35, 35, 35));
-        btnCancelar2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/search-3-24.png"))); // NOI18N
-        btnCancelar2.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
-
-        jLabel58.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel58.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel58.setText("Consultar");
-        btnCancelar2.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
-
-        jPanel11.add(btnCancelar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 160, 40));
-
-        btnConsultar2.setBackground(new java.awt.Color(35, 35, 35));
-        btnConsultar2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/polish-cloth-24.png"))); // NOI18N
-        btnConsultar2.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
+        btnLimpar2.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
 
         jLabel60.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel60.setForeground(new java.awt.Color(255, 255, 255));
         jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel60.setText("Limpar");
-        btnConsultar2.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+        btnLimpar2.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+
+        jPanel11.add(btnLimpar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 160, 40));
+
+        btnConsultar2.setBackground(new java.awt.Color(35, 35, 35));
+        btnConsultar2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnConsultar2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnConsultar2MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnConsultar2MousePressed(evt);
+            }
+        });
+        btnConsultar2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/search-3-24.png"))); // NOI18N
+        btnConsultar2.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
+
+        jLabel58.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel58.setText("Consultar");
+        btnConsultar2.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
 
         jPanel11.add(btnConsultar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 380, 160, 40));
+
+        btnCancelar2.setBackground(new java.awt.Color(35, 35, 35));
+        btnCancelar2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnCancelar2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnCancelar2MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnCancelar2MousePressed(evt);
+            }
+        });
+        btnCancelar2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel55.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel55.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel55.setText("Cancelar");
+        btnCancelar2.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+
+        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/x-mark-24.png"))); // NOI18N
+        btnCancelar2.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
+
+        jPanel11.add(btnCancelar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, 160, 40));
 
         jLabel72.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
         jLabel72.setForeground(new java.awt.Color(255, 255, 255));
@@ -564,6 +614,17 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jPanel21.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 100));
 
         btnSalvar1.setBackground(new java.awt.Color(35, 35, 35));
+        btnSalvar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSalvar1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSalvar1MouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnSalvar1MousePressed(evt);
+            }
+        });
         btnSalvar1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel45.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -578,92 +639,92 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
         jPanel21.add(btnSalvar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 160, 40));
 
-        btnLimpar1.setBackground(new java.awt.Color(35, 35, 35));
-        btnLimpar1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnCancelar1.setBackground(new java.awt.Color(35, 35, 35));
+        btnCancelar1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/x-mark-24.png"))); // NOI18N
+        btnCancelar1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
 
         jLabel49.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel49.setForeground(new java.awt.Color(255, 255, 255));
         jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel49.setText("Cancelar");
-        btnLimpar1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
-
-        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/x-mark-24.png"))); // NOI18N
-        btnLimpar1.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
-
-        jPanel21.add(btnLimpar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, 160, 40));
-
-        btnCancelar1.setBackground(new java.awt.Color(35, 35, 35));
-        btnCancelar1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/search-3-24.png"))); // NOI18N
-        btnCancelar1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
-
-        jLabel51.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel51.setText("Consultar");
-        btnCancelar1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+        btnCancelar1.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
 
         jPanel21.add(btnCancelar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 160, 40));
 
         btnConsultar1.setBackground(new java.awt.Color(35, 35, 35));
         btnConsultar1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/polish-cloth-24.png"))); // NOI18N
-        btnConsultar1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
+        jLabel51.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel51.setText("Consultar");
+        btnConsultar1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+
+        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/search-3-24.png"))); // NOI18N
+        btnConsultar1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
+
+        jPanel21.add(btnConsultar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 380, 160, 40));
+
+        btnLimpar1.setBackground(new java.awt.Color(35, 35, 35));
+        btnLimpar1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel47.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(255, 255, 255));
         jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel47.setText("Limpar");
-        btnConsultar1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
+        btnLimpar1.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
 
-        jPanel21.add(btnConsultar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 380, 160, 40));
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/polish-cloth-24.png"))); // NOI18N
+        btnLimpar1.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 40));
+
+        jPanel21.add(btnLimpar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, 160, 40));
 
         jLabel43.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("Data de nascimento: ");
-        jPanel21.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 200, -1, -1));
-        jPanel21.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 350, -1));
+        jPanel21.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, -1, -1));
+        jPanel21.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 350, -1));
 
         jLabel44.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
         jLabel44.setForeground(new java.awt.Color(255, 255, 255));
         jLabel44.setText("Nome: ");
-        jPanel21.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, -1, -1));
+        jPanel21.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
 
         try {
             ftxtDataNasc.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jPanel21.add(ftxtDataNasc, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, 70, -1));
+        jPanel21.add(ftxtDataNasc, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 180, 70, -1));
 
         jLabel69.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
         jLabel69.setForeground(new java.awt.Color(255, 255, 255));
         jLabel69.setText("CPF: ");
-        jPanel21.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, -1, -1));
+        jPanel21.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, -1));
 
         try {
             ftxtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jPanel21.add(ftxtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 80, -1));
-        jPanel21.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, 280, -1));
+        jPanel21.add(ftxtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, 80, -1));
+        jPanel21.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, 360, -1));
 
         jLabel70.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
         jLabel70.setForeground(new java.awt.Color(255, 255, 255));
         jLabel70.setText("E-mail: ");
-        jPanel21.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, -1, -1));
-        jPanel21.add(txtEndereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, 270, -1));
+        jPanel21.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, -1, -1));
+        jPanel21.add(txtEndereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 350, -1));
 
         jLabel71.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
         jLabel71.setForeground(new java.awt.Color(255, 255, 255));
         jLabel71.setText("Endereço: ");
-        jPanel21.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, -1, -1));
+        jPanel21.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, -1, -1));
 
         jPanel14.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
 
@@ -784,7 +845,7 @@ public class InterfaceSistema extends javax.swing.JFrame {
 
         jLabel32.setFont(new java.awt.Font("Nirmala UI", 1, 48)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel32.setText("Locações");
+        jLabel32.setText("Itens");
         jPanel20.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Media/ícones/shopping-basket-2-80.png"))); // NOI18N
@@ -851,6 +912,28 @@ public class InterfaceSistema extends javax.swing.JFrame {
         btnConsultar3.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 110, 40));
 
         jPanel19.add(btnConsultar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 380, 160, 40));
+
+        jLabel75.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel75.setText("Título: ");
+        jPanel19.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
+        jPanel19.add(txtTituloItem, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 420, -1));
+
+        jLabel76.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel76.setText("Tipo: ");
+        jPanel19.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, -1, -1));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione o tipo do item", "CD", "DVD", "Blu-Ray Disc", " " }));
+        jPanel19.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, -1, -1));
+
+        jLabel77.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel77.setText("Preço: ");
+        jPanel19.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, -1));
+
+        txtPreco.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("####.##"))));
+        jPanel19.add(txtPreco, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 60, -1));
 
         jifLocacoes.getContentPane().add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 870, 540));
 
@@ -977,6 +1060,81 @@ public class InterfaceSistema extends javax.swing.JFrame {
         jPanel9.setBackground(Color.decode("#303030"));
     }//GEN-LAST:event_jPanel9MousePressed
 
+    private void btnSalvar2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalvar2MouseEntered
+        // TODO add your handling code here:
+        btnSalvar2.setBackground(Color.decode("#454545"));
+    }//GEN-LAST:event_btnSalvar2MouseEntered
+
+    private void btnSalvar2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalvar2MouseExited
+        // TODO add your handling code here:
+        btnSalvar2.setBackground(Color.decode("#232323"));
+    }//GEN-LAST:event_btnSalvar2MouseExited
+
+    private void btnSalvar2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalvar2MousePressed
+        // TODO add your handling code here:
+        btnSalvar2.setBackground(Color.decode("#303030"));
+    }//GEN-LAST:event_btnSalvar2MousePressed
+
+    private void btnCancelar2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelar2MouseEntered
+        // TODO add your handling code here:
+        btnCancelar2.setBackground(Color.decode("#454545"));
+    }//GEN-LAST:event_btnCancelar2MouseEntered
+
+    private void btnCancelar2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelar2MouseExited
+        // TODO add your handling code here:
+        btnCancelar2.setBackground(Color.decode("#232323"));
+    }//GEN-LAST:event_btnCancelar2MouseExited
+
+    private void btnCancelar2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCancelar2MousePressed
+        // TODO add your handling code here:
+        btnCancelar2.setBackground(Color.decode("#303030"));
+    }//GEN-LAST:event_btnCancelar2MousePressed
+
+    private void btnConsultar2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConsultar2MouseEntered
+        // TODO add your handling code here:
+        btnConsultar2.setBackground(Color.decode("#454545"));
+    }//GEN-LAST:event_btnConsultar2MouseEntered
+
+    private void btnConsultar2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConsultar2MouseExited
+        // TODO add your handling code here:
+        btnConsultar2.setBackground(Color.decode("#232323"));
+    }//GEN-LAST:event_btnConsultar2MouseExited
+
+    private void btnConsultar2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnConsultar2MousePressed
+        // TODO add your handling code here:
+        btnConsultar2.setBackground(Color.decode("#303030"));
+    }//GEN-LAST:event_btnConsultar2MousePressed
+
+    private void btnLimpar2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLimpar2MouseEntered
+        // TODO add your handling code here:
+        btnLimpar2.setBackground(Color.decode("#454545"));
+    }//GEN-LAST:event_btnLimpar2MouseEntered
+
+    private void btnLimpar2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLimpar2MouseExited
+        // TODO add your handling code here:
+        btnLimpar2.setBackground(Color.decode("#232323"));
+    }//GEN-LAST:event_btnLimpar2MouseExited
+
+    private void btnLimpar2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLimpar2MousePressed
+        // TODO add your handling code here:
+        btnLimpar2.setBackground(Color.decode("#303030"));
+    }//GEN-LAST:event_btnLimpar2MousePressed
+
+    private void btnSalvar1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalvar1MouseEntered
+        // TODO add your handling code here:
+        btnSalvar1.setBackground(Color.decode("#454545"));
+    }//GEN-LAST:event_btnSalvar1MouseEntered
+
+    private void btnSalvar1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalvar1MouseExited
+        // TODO add your handling code here:
+        btnSalvar1.setBackground(Color.decode("#232323"));
+    }//GEN-LAST:event_btnSalvar1MouseExited
+
+    private void btnSalvar1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalvar1MousePressed
+        // TODO add your handling code here:
+        btnSalvar1.setBackground(Color.decode("#303030"));
+    }//GEN-LAST:event_btnSalvar1MousePressed
+
     public void bar(JLabel lab){
         jLabel1.setOpaque(false);
         jLabel4.setOpaque(false);
@@ -1039,6 +1197,7 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JPanel btnSalvar3;
     private javax.swing.JFormattedTextField ftxtCPF;
     private javax.swing.JFormattedTextField ftxtDataNasc;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1112,6 +1271,9 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -1151,6 +1313,8 @@ public class InterfaceSistema extends javax.swing.JFrame {
     private javax.swing.JTextField txtEndereco;
     private javax.swing.JTextField txtGenero;
     private javax.swing.JTextField txtNome;
+    private javax.swing.JFormattedTextField txtPreco;
     private javax.swing.JTextField txtTitulo;
+    private javax.swing.JTextField txtTituloItem;
     // End of variables declaration//GEN-END:variables
 }
